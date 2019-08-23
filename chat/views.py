@@ -5,7 +5,7 @@ from datetime import datetime
 from django.core.exceptions import ObjectDoesNotExist
 
 =======
->>>>>>> 0204819d1d498b7bd2a63d076d99142d295311fc
+
 from django.shortcuts import render
 from django.http import HttpResponse
 from django.utils.datastructures import MultiValueDictKeyError
