@@ -1,0 +1,223 @@
+<html>
+    <head>
+        <!-- <link rel="stylesheet" type="text/css" href="chat.css"> -->
+        <style type="text/css">
+           body 
+{
+    margin: 0;
+    background-color: #ffff80;
+    }
+    .column {
+      float: left;
+      padding: 10px;
+<<<<<<< HEAD
+      height:5000px;
+=======
+      height:800px;
+>>>>>>> 0204819d1d498b7bd2a63d076d99142d295311fc
+    }   
+
+    /* Left and right column */
+    .column.side {
+      width: 30%;
+      border-right:2px solid black;
+    }   
+
+    .column.middle {
+<<<<<<< HEAD
+        width: 60%;   
+=======
+      width: 60%;   
+>>>>>>> 0204819d1d498b7bd2a63d076d99142d295311fc
+    }
+
+}
+.grid-userlist {
+<<<<<<< HEAD
+    display: grid;
+    outline-width: 1px
+    padding: 10px;
+=======
+   display: grid;
+  outline-width: 1px
+  padding: 10px;
+>>>>>>> 0204819d1d498b7bd2a63d076d99142d295311fc
+}
+.grid-user {
+    border-radius: 25px;
+    border: 4px groove yellow;
+    background: #ffffb3;
+    color:black;
+    padding: 5px;
+    font-size: 20px;
+    text-align: center;
+
+}
+<<<<<<< HEAD
+
+.groups {
+    border-radius: 25px;
+    border: 4px groove yellow;
+    background: #ffffb3;
+    color:black;
+    padding: 5px;
+    font-size: 20px;
+    text-align: center;
+
+}
+.chatlist{
+    display: grid;
+=======
+.contacts{
+    font-size: 40px;
+    color:#ccc;
+    text-align: center;
+    margin-top: -5px;   
+}
+.chatlist{
+    display: grid;
+
+>>>>>>> 0204819d1d498b7bd2a63d076d99142d295311fc
+    padding:50px;
+    float: right;
+}
+.messages{
+    background-color: white;
+    border-radius: 10px;
+<<<<<<< HEAD
+    height:auto;
+    max-width: 700px;
+    min-width: 10px;
+    font-size: 15px;
+    text-align: center;
+    padding: 50px;
+    margin-right: -50px;
+}
+.contacts{
+    font-size: 40px;
+    color:#ccc;
+    text-align: center;
+    margin-top: -5px;   
+}
+.Conversations {
+    font-size: 40px;
+    color:#ccc;
+    text-align: center;
+    margin-top: -5px;
+
+}
+
+
+
+=======
+    margin-right: -50px;
+    height:border-box;
+    max-width: 700px;
+    min-width: 200px;
+    text-align: center;
+    padding: 20px;
+}
+
+>>>>>>> 0204819d1d498b7bd2a63d076d99142d295311fc
+input[type=text] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px ;
+  box-sizing: border-box;
+  border: 3px solid #ccc;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  margin-top: 500px;
+}
+
+input[type=text]:focus {
+  border: 3px solid #555;
+}
+input[type=submit]{
+    float: right;
+    width: 100;
+    height: 200;
+}
+<<<<<<< HEAD
+=======
+/*.grid-userlist {
+  border: 1px groove;
+  outline-style: outset;
+  outline-color: yellow;
+  outline-width: 4px
+  grid-column-gap: 50px;
+}*/
+>>>>>>> 0204819d1d498b7bd2a63d076d99142d295311fc
+ 
+        </style>
+    </head>
+
+    <body>
+        <div class="column side">
+
+<<<<<<< HEAD
+         
+            <div class="grid-userlist">
+                <h1 class='contacts'><em>Contacts</em></h1>
+                {% for u in users %}
+                <div class="grid-user"><a href="">{{ u }}</a></div>
+                {% endfor %}
+
+                <br>
+                <h1 class='Conversations'></h1>
+                <!-- Conversations</em></h1>
+                {% for c in conversations %}
+                <div class="groups"><a href="/{{c.id}}">{{ c.chatname }}</a></div>
+                {% endfor %} -->
+                <!-- </div> -->
+            </div>
+        </div>
+
+        
+        <div class="column middle">
+            <div class="chatlist">
+                {% for c in chat %}
+                <div class="messages">{{c}}</div>
+                <br>
+                <br>
+                {% endfor %}
+            </div>  
+
+
+            <form action="/chat/chat/" method="POST">
+                <br>
+                <input type="text" name="messages" value="">
+=======
+            <h1 class='contacts'><em>Contacts</em></h1>
+
+            <div class="grid-userlist">
+                <% for u in users %>
+                <div class="grid-user">u</div>
+                <% end %>
+                </div>
+            </div>
+
+        
+        <div class="column middle">
+
+            <div class="chatlist">
+               
+                <div class="messages">mahta</div>
+             
+            </div>    
+
+            <form action="/chat/chat/" method="POST">
+                <br>
+                <input type="text" name="message" value="">
+>>>>>>> 0204819d1d498b7bd2a63d076d99142d295311fc
+                <br><br>
+                <input type="submit" value="Send">
+            </form> 
+
+<<<<<<< HEAD
+        </div>
+=======
+    </div>
+>>>>>>> 0204819d1d498b7bd2a63d076d99142d295311fc
+    </body>
+</html>
